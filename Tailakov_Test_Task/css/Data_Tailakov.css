@@ -1,0 +1,167 @@
+@font-face {
+    font-family: "GraphikLCG";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("../fonts/GraphikLCG-Regular.woff2") format("woff2"), url("../fonts/GraphikLCG-Regular.woff") format("woff");
+  }
+
+body {
+    font-family: GraphikLCG;
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.left-container {
+    background-color: white;
+    padding: 20px;
+    width: 30%;
+    float: left;
+    box-sizing: border-box;
+    width: 1055px;
+    height: 940px;
+    margin: 20px;
+}
+  
+.main_content_present {
+    overflow: hidden;
+}
+.logo_Task {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 1316px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-left: 45px;
+}
+.logo {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100px;
+    margin-right: 80px; 
+}
+
+
+.Task_completed {
+    padding-bottom: 10px;
+}
+
+.surname_container {
+    padding-top: 60px;
+}
+
+.surname_container, .name_container {
+    color: #1B1B1B;
+    font-family: GraphikLCG;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    max-width: 494px;
+    margin: 0 auto;
+    padding-right: 155px;
+}
+
+.Data_container {
+    max-width: 494px;
+    margin: 0 auto;
+    color: #1B1B1B;
+    font-family: GraphikLCG;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+    padding-right: 155px;
+    padding-top: 50px;
+}
+
+.Telephone {
+    color: #1B1B1B;
+    font-family: GraphikLCG;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; 
+    max-width: 494px;
+    margin: 0 auto;
+    padding-right: 155px;
+    padding-top: 50px;
+}
+
+.Link {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    top: 250px;
+    max-width: 645px;
+    margin: 0 auto;
+}
+
+.link_logo {
+    padding-top: 3px;
+}
+
+.link_profile {
+    color: #3E29E3;
+    font-family: GraphikLCG;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    padding-left: 40px;
+}
+
+
+.logo_close {
+    position: fixed;
+    top: 25px;
+    right: 60px;
+    padding: 20px;
+    z-index: 1000;
+    cursor: pointer;
+    
+  }
+  
+.close-icon {
+    fill: #ffffff;
+}
+/* медиа запросы для адаптива  */
+@media (max-width: 1200px) {
+    .close-icon {
+        fill: #000000;
+    }
+}
+
+@media (max-width: 736px) {
+    .Link, .Telephone, .Data_container, .surname_container, .name_container {
+        max-width: 350px;
+    }
+    .left-container {
+        max-width: 400px;
+    } 
+    .Link {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+        top: 10px;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+    .Data_container {
+        padding-top: 10px;
+    }
+
+    .Telephone {
+        padding-top: 10px;
+    }
+}
+
